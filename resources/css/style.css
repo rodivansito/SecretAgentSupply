@@ -1,8 +1,12 @@
 html {
   font-size: 18px;
-  background-color: black;
-
+  background-color: white;
 }
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* logo */
 
 .logo img {
   height: 1.5rem;
@@ -14,36 +18,224 @@ html {
 .logo h2 {
   font-family: Helvetica;
   font-size: 1rem;
-  padding-bottom: 0.66rem;
-  padding-top: 0.66rem;
   color: white;
   display: inline;
 }
+.logo {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  background-color: black;
+}
+
+/* cover */
 
 .Cover{
   height: 25rem;
-  margin-top: 9rem;
-  background-image: url("./images/moto.jpeg");
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.66rem;
 }
 .Cover .content {
   display: block;
+  background-color: black;
   color: white;
+  width: 20rem;
+  position: relative;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  top: 9rem;
+}
+.Cover .content h3 {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+}
+.Cover .content h1 {
+  padding-left: 3rem;
+  font-family: Helvetica;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
 
 }
+
+@media only screen and (max-width:1024px;) {
+  h1 {
+    font-size: 1.5rem;
+  }
+ h3 {
+   font-size: 0.5rem;
+ }
+}
+
+/* nav */
+
 .nav {
   display: flex;
   width: 100%;
   background-color: firebrick;
   flex-wrap: wrap;
   color: white;
-
+  justify-content: space-between;
+  align-content: center;
 }
-.nav p {
+
+.nav ul li  {
+  margin-left: 4rem;
+  margin-right: 4rem;
   display: inline-flex;
-  justify-content: center;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-right: 2rem;
   padding-left: 2rem;
+}
+.mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width:1024px;) {
+.nav ul li {
+  display: none;
+}
+.mobilenav {
+  display: block;
+  text-align: center;
+}
+}
+
+.main {
+  background-color: white;
+}
+.main .products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
   align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 18px;
+}
+.main .products .pen {
+  display: block;
+  width: 30%;
+  height: 12rem;
+  border: 4px solid black;
+  padding-bottom: 3rem;
+
+
+}
+
+.main .products .pen img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+.main .products .pen p {
+  background-color: black;
+  color: white;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.main .products .watch {
+  display: block;
+  padding-top: 3rem;
+  width: 30%;
+  height: 12rem;
+  border: 4px solid black;
+  padding-bottom: 3rem;
+
+
+}
+.main .products .watch img {
+  display: flex;
+  height: 9rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+
+}
+.main .products .watch p {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+}
+.main .products .glasses {
+  display: block;
+  padding-top: 3rem;
+  width: 30%;
+  height: 12rem;
+  border: 4px solid black;
+  padding-bottom: 3rem;
+
+
+}
+.main .products .glasses img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+.main .products .glasses p {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+}
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 4rem;
+}
+
+.hours p {
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+.hours {
+  width: 35%;
+}
+.location {
+  width: 35%;
+}
+
+.location p {
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: left;
+  height: 5rem;
 }
