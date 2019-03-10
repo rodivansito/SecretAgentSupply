@@ -64,7 +64,7 @@ body {
 
 }
 
-@media only screen and (max-width:1024px;) {
+@media only screen and (max-width:1024px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -98,7 +98,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width:1024px;) {
+@media only screen and (max-width:1024px) {
 .nav ul li {
   display: none;
 }
