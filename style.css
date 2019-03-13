@@ -1,0 +1,188 @@
+/* Tamming boxmodel with reset */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+h1,
+h4 {
+  font-weight: bold;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* logo */
+
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+
+
+.company {
+  background-color: black;
+  color: white;
+}
+
+/* cover */
+
+.Cover {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.headline {
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+}
+
+.headline h1 {
+  margin: 0.25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+
+@media only screen and (max-width:470px) {
+  .headline h1 {
+    font-size: 1rem;
+
+  }
+  .headline h4 {
+    font-size: .77rem;
+
+  }
+  .headline {
+    width:100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .Cover {
+    height: 15rem;
+  }
+}
+
+/* nav */
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+.mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width:1024px) {
+nav ul {
+  display: none;
+}
+  .mobilenav {
+  display: block;
+  text-align: center;
+}
+}
+
+/* Products and business information */
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+
+.product {
+  width: 30%;
+}
+.product-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+.product-image img {
+  max-width: 8rem;
+}
+
+.description {
+  display: block;
+  padding: 0.5rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.info {
+  width: 35%;
+}
+.info .Title {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width:1024px){
+  .product{
+    width: 47%;
+  }
+   .product.glasses{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:470px){
+  .products, .business-info {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .product.watch {
+    display: none;
+  }
+}
+.info {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 5rem 0;
+}
